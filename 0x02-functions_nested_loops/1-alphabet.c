@@ -1,9 +1,12 @@
 #include"main.h"
+#include <unistd.h>
 
 /**
  * print_alphabet - Entry point
  *
  * print_alphabet - prints the alphabets in lower case form a - z
+ *
+ * _putchar - uses putchar prototype
  *
  * Return: void
  */
