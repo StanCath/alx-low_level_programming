@@ -5,21 +5,21 @@
  * @s: string to be encoded
  * Return: @s
  */
-
 char *leet(char *s)
 {
-	int i  = 0, j;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int a;
+	int b;
+	char letters[] = "aeotl";
+	char up_letters[] = "AEOTL";
+	char numbers[] = "43071";
 
-	while (s[i])
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		for (j = 0; j <= 7; j++)
+		for (b = 0; letters[b] != '\0'; b++)
 		{
-			if (s[i] == leet[j] ||
-					s[i] - 32 == leet[j])
-				s[i] = j + '0';
+			if (s[a] == letters[b] || s[a] == up_letters[b])
+				s[a] = numbers[b];
 		}
-		j++;
 	}
 	return (s);
 }
