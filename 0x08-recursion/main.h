@@ -15,5 +15,6 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int find_sqrt(int num, int root);
 int is_divisible(int num, int div);
+int is_palind_recursive(char *s, int a, int b);
 
 #endif /* MAIN_H */
